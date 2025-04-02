@@ -3,7 +3,6 @@
 
 
 #capa-inicio {
- 
 
   position: fixed;
   font-family: "Montserrat", sans-serif;
@@ -11,13 +10,13 @@
   font-weight: 900;
   font-style: normal;
   background:#002e68;
-  overflow:hidden;
+  overflow: hidden;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: auto;
   transition: opacity 0.5s ease;
 }
 
