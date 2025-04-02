@@ -1,35 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
-
-
-#capa-inicio {
-
-  position: fixed;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  background:#002e68;
-  overflow: hidden;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: auto;
-  transition: opacity 0.5s ease;
+#capa-inicio::before {
+  content: "ligma";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url('logo.png') no-repeat center;
+  background-size: contain;
+  margin-bottom: 2rem;
+  animation: spin 3s linear infinite;
 }
 
-svg {
-  width:100%;
-  height:100vh;
-}
-
-.capa-oculta {
-  display: none !important;
-}
-
-/* Clase para mostrar el contenido principal */
-.contenido-visible {
-  display: block !important;
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

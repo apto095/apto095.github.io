@@ -1,63 +1,41 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Bol VII</title>
-  <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Capa de Inicio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="capa-inicio" class="capa-activa">
-  <h1>¡Bienvenido!</h1>
+    <!-- Capa de inicio (animación) -->
+    <div id="capa-inicio" class="capa-activa">
+        <h1>¡Bienvenido!</h1>
         <p>Toca la pantalla para continuar...</p>
-<svg viewBox="0 0 1280 720">
-  <mask id="maskLeft">
-    <rect x="-50%" width="100%" height="100%" fill="#fff"/>
-  </mask>
-  <mask id="maskRight">
-    <rect x="50%" width="100%" height="100%" fill="#fff"/>
-  </mask>
-  <g font-size="150">
-    <g mask="url(#maskLeft)" fill="#fff" class="left">
-      <text y="120">Super</text>
-      <text y="250">Bol</text>
-      <text y="380">VII</text>
-    </g>
-    <g mask="url(#maskRight)" fill="#ff3636" class="right">
-      <text y="120">Super</text>
-      <text y="250">Bol</text>
-      <text y="380">VII</text>
-    </g>
-  </g>
-</svg>
+    </div>
 
-</div>
+    <!-- Contenido principal (oculto al inicio) -->
+    <div id="contenido-principal" class="capa-oculta">
+        <header>
+            <h1>Mi Página Web</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Contenido Principal</h2>
+                <p>Esta es la página que se muestra después de la animación inicial.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024</p>
+        </footer>
+    </div>
 
-<div id="contenido-principal" class="capa-oculta">
-  <header>
-      <h1>Super Bol VII</h1>
-  </header>
-  <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Menú</a></li>
-        <li><a href="#">Contactanos!</a></li>
-      </ul>
-  </nav>
-  <main>
-      <section>
-          <h2>Contenido Principal</h2>
-          <p>(aquí van las imágenes y videos del boliche, y un menú rápido)</p>
-      </section>
-  </main>
-  <footer>
-      <p>&copy; 2025</p>
-  </footer>
-</div>
-  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script><script  src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
