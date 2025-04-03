@@ -3,7 +3,8 @@
 
 
 #capa-inicio {
-
+  top: 0;
+  left: 0;
   position: fixed;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
