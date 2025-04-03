@@ -38,11 +38,11 @@ const tl2 = gsap.timeline()
 document.querySelectorAll('text').forEach((t,i)=>{
   tl2.add(
     gsap.fromTo(t, {
-      xPercent:-100,x: () => window.innerWidth * 0.55, // 55% del ancho
+      xPercent:-100,x: () => window.innerWidth * 0.5,
     }, {
-      duration: 1,
+      duration: 4,
       xPercent: 0,
-      x: () => window.innerWidth * 0.45
+      x: () => window.innerWidth * 0.5
     })
     , i%3*0.2)
 })
